@@ -4,25 +4,33 @@
 public class Tree extends Garden {
 
     public Tree(String colour){
-        super("Tree", colour, true, 0);
+        super("Tree", colour, 0);
     }
 
 
-    public void treeNeedsWater(int water) {
+    public boolean treeNeedsWater() {
         if (water < 10) {
-            System.out.println("needs water");
-        }
+            return true;
+        } else{
+            return false;}
+    }
 
+    public void wateringTree(int givenWater) {
+        if (treeNeedsWater()){
+            setWater(getWater() + (int)(givenWater * 0.4));
+        }
+    }
+
+    @Override
+    public String toString() {
+        if(treeNeedsWater()) {
+            return String.format("This %s %s needs water", colour, name);
+        }
         else {
-            super.setNeedWater(false);
-            System.out.println("doesn't need water");
+            return String.format("This %s %s doesn't need water", colour, name);
         }
     }
 
 
-    public double wateringTree(int water) {
-        double waterD = (double) water * 0.4;
-        return water + waterD;
-    }
 
 }

@@ -10,31 +10,34 @@ public class App {
         Tree orangeTree = new Tree("orange");
 
 
-        System.out.println("This " + yellowFlower + yellowFlower.flowerNeedsWater(yellowFlower.getWater()));
-        System.out.println("This " + blueFlower + blueFlower.flowerNeedsWater());
-        System.out.println("This " + purpleTree + purpleTree.treeNeedsWater());
-        System.out.println("This " + orangeTree + orangeTree.treeNeedsWater());
+        System.out.println(yellowFlower.toString());
+        System.out.println(blueFlower.toString());
+        System.out.println(purpleTree.toString());
+        System.out.println(orangeTree.toString() + "\n");
 
-        System.out.printf("Watering with d%", 40);
+
+        System.out.printf("Watering with %d \n", 40);
         yellowFlower.wateringFlower(Garden.watering(40));
         blueFlower.wateringFlower(Garden.watering(40));
         purpleTree.wateringTree(Garden.watering(40));
         orangeTree.wateringTree(Garden.watering(40));
-        System.out.println("This " + yellowFlower + yellowFlower.flowerNeedsWater(yellowFlower.getWater()));
-        System.out.println("This " + blueFlower + blueFlower.flowerNeedsWater());
-        System.out.println("This " + purpleTree + purpleTree.treeNeedsWater());
-        System.out.println("This " + orangeTree + orangeTree.treeNeedsWater());
 
-        System.out.printf("Watering with d%", 70);
-        yellowFlower.wateringFlower(Garden.watering(40));
-        blueFlower.wateringFlower(Garden.watering(40));
-        purpleTree.wateringTree(Garden.watering(40));
-        orangeTree.wateringTree(Garden.watering(40));
-        System.out.println("This " + yellowFlower + yellowFlower.flowerNeedsWater(yellowFlower.getWater()));
-        System.out.println("This " + blueFlower + blueFlower.flowerNeedsWater());
-        System.out.println("This " + purpleTree + purpleTree.treeNeedsWater());
-        System.out.println("This " + orangeTree + orangeTree.treeNeedsWater());
+        System.out.println(yellowFlower.toString());
+        System.out.println(blueFlower.toString());
+        System.out.println(purpleTree.toString());
+        System.out.println(orangeTree.toString() + "\n");
 
+
+        System.out.printf("Watering with %d \n", 70);
+        yellowFlower.wateringFlower(Garden.watering(70));
+        blueFlower.wateringFlower(Garden.watering(70));
+        purpleTree.wateringTree(Garden.watering(70));
+        orangeTree.wateringTree(Garden.watering(70));
+
+        System.out.println(yellowFlower.toString());
+        System.out.println(blueFlower.toString());
+        System.out.println(purpleTree.toString());
+        System.out.println(orangeTree.toString() + "\n");
 
 
 

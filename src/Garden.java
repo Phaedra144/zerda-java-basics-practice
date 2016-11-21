@@ -4,7 +4,6 @@
 abstract public class Garden {
 
     protected String name;
-    protected boolean needWater;
     protected String colour;
     protected int water;
 
@@ -13,53 +12,28 @@ abstract public class Garden {
     }
 
 
-    public Garden(String name, String colour, boolean needWater, int water){
+    public Garden(String name, String colour, int water){
 
         this.name = name;
         this.colour = colour;
-        this.needWater = needWater;
         this.water = water;
 
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public String getColour() {
-        return colour;
-    }
+    public static int watering(int i){
 
-    public int getWater() {
-        return water;
-    }
-
-    public boolean getisNeedWater() {
-        return needWater;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
+        i = i/4;
+        return i;
     }
 
     public void setWater(int water) {
         this.water = water;
     }
 
-    public void setNeedWater(boolean needWater) {
-        this.needWater = needWater;
-    }
-
-    public static int watering(int water){
-        water = water/4;
-
+    public int getWater() {
         return water;
     }
-
 
 
 }
