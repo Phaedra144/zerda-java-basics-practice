@@ -94,9 +94,12 @@ class Main {
 
 What's wrong with the following output? What would be the actual output? [2p] Modify what you need to correct this! [2p]
 ```
+The actual would be:
+Apple is created
 Blackberry is created
 4
 ```
+Needs to remove "extends Apple" from Blackberry class.
 
 #### Explain what you did, and answer the questions here:
 
@@ -104,10 +107,10 @@ Blackberry is created
 ## 4. Question time! (~20 mins) [6p]
 
 ### Whats the difference between a Class and an Object? [2p]
-#### Your answer:
+#### Your answer: A class is a blueprint for creating objects. They contains objects.
 
 ### What is the superclass when a class doesnt extend anything? What methods will it inherit (the two most important is enough)? [2p]
-#### Your answer:
+#### Your answer: They inherit from the Object class by default. public String toString, public static void main
 
 ### What is polymorphism? [2p]
-#### Your answer:
+#### Your answer: It is an ability of an object to take any form. It is most commonly used when child class object inherits from parent class.
